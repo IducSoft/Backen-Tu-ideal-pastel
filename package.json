@@ -1,0 +1,22 @@
+{
+  "name": "api-tu-pastel-ideal",
+  "version": "1.0.0",
+  "description": "Mi primeraversion de tu pastel ideal api",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon ./server.js localhost 7000"
+  },
+  "author": "Isaac Urdaneta",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
