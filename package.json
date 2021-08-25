@@ -2,9 +2,9 @@
   "name": "api-tu-pastel-ideal",
   "version": "1.0.0",
   "description": "Mi primeraversion de tu pastel ideal api",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "server": "nodemon ./server.js localhost 7000"
+    "server": "nodemon ./app.js localhost 7000"
   },
   "author": "Isaac Urdaneta",
   "license": "ISC",

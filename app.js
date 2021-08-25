@@ -1,5 +1,5 @@
 const express = require("express")
-
+const process = require("process")
 const dotenv = require("dotenv");
 
 const cors = require("cors")
@@ -9,6 +9,10 @@ const {json} = require("body-parser")
 const axios = require("axios")
 
 const app = express();
+
+const PORT =  process.env.PORT || 7000;
+
+// const PORT =  7000;
 
 app.use(cors())
 app.use(json())
@@ -42,7 +46,9 @@ app.get("/mistrabajos", async (req, res)=>{
     return res.send(response.data)
 })
 
-const PORT = 7000;
+// app.set('port', process.env.PORT || 3000);
+
+
 
 app.listen(PORT, console.log(`server running on port ${PORT}`));
 
